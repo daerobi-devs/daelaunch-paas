@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { queryDb } from '../../lib/db';
+import { queryDb } from '../../../lib/db';
 import * as bcrypt from 'bcryptjs';
-import { signToken, getSessionFromRequest } from '../../lib/auth';
+import { signToken, getSessionFromRequest } from '../../../lib/auth';
 
 // POST /api/auth (action: login | register)
 export async function POST(req: NextRequest) {
