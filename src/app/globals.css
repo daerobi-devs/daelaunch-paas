@@ -2,31 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-
-body {
-  background-color: #060709;
-  color: #E2E8F0;
-  font-family: 'Space Grotesk', sans-serif;
-  overflow-x: hidden;
+@layer base {
+  body {
+    background-color: #FAF9F6;
+    color: #1A1A1A;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
 }
 
-code, pre, .font-mono {
-  font-family: 'JetBrains Mono', monospace;
+.editorial-grid {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #0B0D13;
-}
-::-webkit-scrollbar-thumb {
-  background: #1D2333;
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #00F0FF;
+.drop-cap::first-letter {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 3.6rem;
+  line-height: 0.85;
+  float: left;
+  margin-right: 0.75rem;
+  font-weight: 700;
+  color: #111827;
 }

@@ -7,25 +7,32 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        serif: ['Newsreader', 'Georgia', 'serif'],
+        sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
+      },
       colors: {
-        obsidian: {
-          950: '#060709',
-          900: '#0B0D13',
-          800: '#131722',
-          700: '#1D2333',
-          600: '#2C354C',
+        paper: {
+          50: '#FFFFFF',
+          100: '#FAF9F5',
+          200: '#F4F1EA',
+          300: '#E8E4DA',
+          400: '#D5D0C3',
+          500: '#B0AA9B',
+          600: '#7B7567',
+          700: '#4A463D',
+          800: '#2A2722',
+          900: '#141311',
         },
-        cyber: {
-          cyan: '#00F0FF',
-          amber: '#FFB800',
-          emerald: '#10B981',
-          rose: '#F43F5E',
+        ink: {
+          DEFAULT: '#18181B',
+          muted: '#52525B',
+          subtle: '#71717A',
+          border: '#E4E4E7',
+          light: '#F4F4F5',
         }
       },
-      fontFamily: {
-        mono: ['JetBrains Mono', 'monospace'],
-        sans: ['Space Grotesk', 'sans-serif'],
-      }
     },
   },
   plugins: [],

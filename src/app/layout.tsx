@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'DaeLaunch // Micro-PaaS & Cloud App Engine',
-  description: 'Instant Developer Cloud Platform powered by Coolify & Next.js 15',
+  title: 'SMA Cendekia Nusantara // Profil & Warta Akademik',
+  description: 'Portal Resmi Profil Sekolah, Prestasi, dan Warta Kegiatan SMA Cendekia Nusantara.',
 };
 
 export default function RootLayout({
@@ -13,7 +13,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
-      <body className="min-h-screen bg-obsidian-950 text-slate-100 selection:bg-cyber-cyan selection:text-black">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-screen bg-[#FDFCF7] text-neutral-900 selection:bg-neutral-800 selection:text-white font-sans antialiased">
         {children}
       </body>
     </html>
