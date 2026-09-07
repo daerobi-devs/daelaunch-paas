@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { queryDb } from '@/lib/db';
-import { getSessionFromRequest } from '@/lib/auth';
-import { coolifyFetch } from '@/lib/coolify';
+import { queryDb } from '../../lib/db';
+import { getSessionFromRequest } from '../../lib/auth';
+import { coolifyFetch } from '../../lib/coolify';
 
 // GET /api/apps (List apps belonging to the logged in user)
 export async function GET(req: NextRequest) {

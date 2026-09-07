@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { queryDb } from '@/lib/db';
-import { getSessionFromRequest } from '@/lib/auth';
-import { coolifyFetch } from '@/lib/coolify';
+import { queryDb } from '../../lib/db';
+import { getSessionFromRequest } from '../../lib/auth';
+import { coolifyFetch } from '../../lib/coolify';
 
 // GET /api/admin (God-Mode Overview for Mas Dae)
 export async function GET(req: NextRequest) {
